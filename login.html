@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Inteligencia Emocional</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+    <div class="header">
+        <a href="https://71857433.wixsite.com/psicoinnovate">
+            <img src="image/logo.png" alt="Logo"> <!-- Cambia el enlace del logo según sea necesario -->
+        </a>
+        <span class="title">Prueba Psicológica</span>
+    </div>
+    <p class="p-bienvenida">
+        Querido colaborador, tu participación en esta evaluación es muy valiosa 
+        para nosotros. Queremos que sepas que no hay respuestas correctas o incorrectas; 
+        el objetivo es entender mejor tus habilidades para apoyarte en tu desarrollo personal y 
+        profesional. Responde con sinceridad y siéntete cómodo al compartir tus pensamientos.
+    </p>
+
+
+        <div id="seleccionGenero">
+            <p>Por favor, selecciona tu género:</p>
+            <label>
+                <input type="radio" name="genero" value="hombre"> Hombre
+            </label>
+            <label>
+                <input type="radio" name="genero" value="mujer"> Mujer
+            </label>
+        </div>
+
+        <!-- Bloque de preguntas: Atención -->
+        <fieldset id="bloque1">
+            <legend>Atención (Ítems 1 al 8)</legend>
+            <ol>
+                <label for="item1">¿Presto mucha atención a los sentimientos?</label>
+<select id="item1" name="item1" required>
+    <option value="1">Nada de acuerdo</option>
+    <option value="2">Algo de acuerdo</option>
+    <option value="3">Bastante de acuerdo</option>
+    <option value="4">Muy de acuerdo</option>
+    <option value="5">Totalmente de acuerdo</option>
+</select><br><br>
+
+<label for="item2">¿Normalmente me preocupo por lo que siento?</label>
+<select id="item2" name="item2" required>
+    <option value="1">Nada de acuerdo</option>
+    <option value="2">Algo de acuerdo</option>
+    <option value="3">Bastante de acuerdo</option>
+    <option value="4">Muy de acuerdo</option>
+    <option value="5">Totalmente de acuerdo</option>
+</select><br><br>
+
+<label for="item3">¿Normalmente dedico tiempo a pensar en mis emociones?</label>
+<select id="item3" name="item3" required>
+    <option value="1">Nada de acuerdo</option>
+    <option value="2">Algo de acuerdo</option>
+    <option value="3">Bastante de acuerdo</option>
+    <option value="4">Muy de acuerdo</option>
+    <option value="5">Totalmente de acuerdo</option>
+</select><br><br>
+
+<label for="item4">¿Pienso que merece la pena prestar atención a mis emociones?</label>
+<select id="item4" name="item4" required>
+    <option value="1">Nada de acuerdo</option>
+    <option value="2">Algo de acuerdo</option>
+    <option value="3">Bastante de acuerdo</option>
+    <option value="4">Muy de acuerdo</option>
+    <option value="5">Totalmente de acuerdo</option>
+</select><br><br>
+
+<label for="item5">¿Dejo que mis sentimientos afecten a mis pensamientos?</label>
+<select id="item5" name="item5" required>
+    <option value="1">Nada de acuerdo</option>
+    <option value="2">Algo de acuerdo</option>
+    <option value="3">Bastante de acuerdo</option>
+    <option value="4">Muy de acuerdo</option>
+    <option value="5">Totalmente de acuerdo</option>
+</select><br><br>
+
+<label for="item6">¿Pienso en mi estado de ánimo constantemente?</label>
+<select id="item6" name="item6" required>
+    <option value="1">Nada de acuerdo</option>
+    <option value="2">Algo de acuerdo</option>
+    <option value="3">Bastante de acuerdo</option>
+    <option value="4">Muy de acuerdo</option>
+    <option value="5">Totalmente de acuerdo</option>
+</select><br><br>
+
+<label for="item7">¿A menudo pienso en mis sentimientos?</label>
+<select id="item7" name="item7" required>
+    <option value="1">Nada de acuerdo</option>
+    <option value="2">Algo de acuerdo</option>
+    <option value="3">Bastante de acuerdo</option>
+    <option value="4">Muy de acuerdo</option>
+    <option value="5">Totalmente de acuerdo</option>
+</select><br><br>
+
+<label for="item8">¿Presto mucha atención a cómo me siento?</label>
+<select id="item8" name="item8" required>
+    <option value="1">Nada de acuerdo</option>
+    <option value="2">Algo de acuerdo</option>
+    <option value="3">Bastante de acuerdo</option>
+    <option value="4">Muy de acuerdo</option>
+    <option value="5">Totalmente de acuerdo</option>
+</select><br><br>
+                <!-- Más preguntas... hasta el ítem 8 -->
+            </ol>
+            <button type="button" onclick="siguienteBloque(2)">Siguiente</button>
+        </fieldset>
+        
+        <!-- Bloque de preguntas: Claridad -->
+        <fieldset id="bloque2" style="display:none;">
+            <legend>Claridad (Ítems 9 al 16)</legend>
+            <ol>
+                <label for="item9">¿Tengo claros mis sentimientos?</label>
+<select id="item9" name="item9" required>
+    <option value="1">Nada de acuerdo</option>
+    <option value="2">Algo de acuerdo</option>
+    <option value="3">Bastante de acuerdo</option>
+    <option value="4">Muy de acuerdo</option>
+    <option value="5">Totalmente de acuerdo</option>
+</select><br><br>
+
+<label for="item10">¿Frecuentemente puedo definir mis sentimientos?</label>
+<select id="item10" name="item10" required>
+    <option value="1">Nada de acuerdo</option>
+    <option value="2">Algo de acuerdo</option>
+    <option value="3">Bastante de acuerdo</option>
+    <option value="4">Muy de acuerdo</option>
+    <option value="5">Totalmente de acuerdo</option>
+</select><br><br>
+
+<label for="item11">¿Casi siempre sé cómo me siento?</label>
+<select id="item11" name="item11" required>
+    <option value="1">Nada de acuerdo</option>
+    <option value="2">Algo de acuerdo</option>
+    <option value="3">Bastante de acuerdo</option>
+    <option value="4">Muy de acuerdo</option>
+    <option value="5">Totalmente de acuerdo</option>
+</select><br><br>
+
+<label for="item12">¿Normalmente conozco mis sentimientos sobre las personas?</label>
+<select id="item12" name="item12" required>
+    <option value="1">Nada de acuerdo</option>
+    <option value="2">Algo de acuerdo</option>
+    <option value="3">Bastante de acuerdo</option>
+    <option value="4">Muy de acuerdo</option>
+    <option value="5">Totalmente de acuerdo</option>
+</select><br><br>
+
+<label for="item13">¿A menudo me doy cuenta de mis sentimientos en diferentes situaciones?</label>
+<select id="item13" name="item13" required>
+    <option value="1">Nada de acuerdo</option>
+    <option value="2">Algo de acuerdo</option>
+    <option value="3">Bastante de acuerdo</option>
+    <option value="4">Muy de acuerdo</option>
+    <option value="5">Totalmente de acuerdo</option>
+</select><br><br>
+
+<label for="item14">¿Siempre puedo decir cómo me siento?</label>
+<select id="item14" name="item14" required>
+    <option value="1">Nada de acuerdo</option>
+    <option value="2">Algo de acuerdo</option>
+    <option value="3">Bastante de acuerdo</option>
+    <option value="4">Muy de acuerdo</option>
+    <option value="5">Totalmente de acuerdo</option>
+</select><br><br>
+
+<label for="item15">¿A veces puedo decir cuáles son mis emociones?</label>
+<select id="item15" name="item15" required>
+    <option value="1">Nada de acuerdo</option>
+    <option value="2">Algo de acuerdo</option>
+    <option value="3">Bastante de acuerdo</option>
+    <option value="4">Muy de acuerdo</option>
+    <option value="5">Totalmente de acuerdo</option>
+</select><br><br>
+
+<label for="item16">¿Puedo llegar a comprender mis sentimientos?</label>
+<select id="item16" name="item16" required>
+    <option value="1">Nada de acuerdo</option>
+    <option value="2">Algo de acuerdo</option>
+    <option value="3">Bastante de acuerdo</option>
+    <option value="4">Muy de acuerdo</option>
+    <option value="5">Totalmente de acuerdo</option>
+</select><br><br>
+
+
+                <!-- Más preguntas... hasta el ítem 16 -->
+            </ol>
+            <button type="button" onclick="siguienteBloque(3)">Siguiente</button>
+        </fieldset>
+
+        <!-- Bloque de preguntas: Reparación -->
+        <fieldset id="bloque3" style="display:none;">
+            <legend>Reparación (Ítems 17 al 24)</legend>
+            <ol>
+                <label for="item17">¿Aunque a veces me siento triste, suelo tener una visión positiva?</label>
+<select id="item17" name="item17" required>
+    <option value="1">Nada de acuerdo</option>
+    <option value="2">Algo de acuerdo</option>
+    <option value="3">Bastante de acuerdo</option>
+    <option value="4">Muy de acuerdo</option>
+    <option value="5">Totalmente de acuerdo</option>
+</select><br><br>
+
+<label for="item18">¿Aunque me sienta mal, procuro pensar en cosas agradables?</label>
+<select id="item18" name="item18" required>
+    <option value="1">Nada de acuerdo</option>
+    <option value="2">Algo de acuerdo</option>
+    <option value="3">Bastante de acuerdo</option>
+    <option value="4">Muy de acuerdo</option>
+    <option value="5">Totalmente de acuerdo</option>
+</select><br><br>
+
+<label for="item19">¿Cuando estoy triste, pienso en todos los placeres de la vida?</label>
+<select id="item19" name="item19" required>
+    <option value="1">Nada de acuerdo</option>
+    <option value="2">Algo de acuerdo</option>
+    <option value="3">Bastante de acuerdo</option>
+    <option value="4">Muy de acuerdo</option>
+    <option value="5">Totalmente de acuerdo</option>
+</select><br><br>
+
+<label for="item20">¿Intento tener pensamientos positivos aunque me sienta mal?</label>
+<select id="item20" name="item20" required>
+    <option value="1">Nada de acuerdo</option>
+    <option value="2">Algo de acuerdo</option>
+    <option value="3">Bastante de acuerdo</option>
+    <option value="4">Muy de acuerdo</option>
+    <option value="5">Totalmente de acuerdo</option>
+</select><br><br>
+
+<label for="item21">¿Si doy demasiadas vueltas a las cosas, complicándolas, trato de calmarme?</label>
+<select id="item21" name="item21" required>
+    <option value="1">Nada de acuerdo</option>
+    <option value="2">Algo de acuerdo</option>
+    <option value="3">Bastante de acuerdo</option>
+    <option value="4">Muy de acuerdo</option>
+    <option value="5">Totalmente de acuerdo</option>
+</select><br><br>
+
+<label for="item22">¿Me preocupo por tener un buen estado de ánimo?</label>
+<select id="item22" name="item22" required>
+    <option value="1">Nada de acuerdo</option>
+    <option value="2">Algo de acuerdo</option>
+    <option value="3">Bastante de acuerdo</option>
+    <option value="4">Muy de acuerdo</option>
+    <option value="5">Totalmente de acuerdo</option>
+</select><br><br>
+
+<label for="item23">¿Tengo mucha energía cuando me siento feliz?</label>
+<select id="item23" name="item23" required>
+    <option value="1">Nada de acuerdo</option>
+    <option value="2">Algo de acuerdo</option>
+    <option value="3">Bastante de acuerdo</option>
+    <option value="4">Muy de acuerdo</option>
+    <option value="5">Totalmente de acuerdo</option>
+</select><br><br>
+
+<label for="item24">¿Cuando estoy enfadado intento cambiar mi estado de ánimo?</label>
+<select id="item24" name="item24" required>
+    <option value="1">Nada de acuerdo</option>
+    <option value="2">Algo de acuerdo</option>
+    <option value="3">Bastante de acuerdo</option>
+    <option value="4">Muy de acuerdo</option>
+    <option value="5">Totalmente de acuerdo</option>
+</select><br><br>
+
+                <!-- Más preguntas... hasta el ítem 24 -->
+            </ol>
+            <button type="button" onclick="calcularPuntuacion()">Calcular puntuación</button>
+        </fieldset>
+    </form>
+<script src="js/script.js"></script>
+<div id="resultado">
+    <!-- Aquí se mostrará el mensaje de resultados -->
+    <div id="resultadoMensaje"></div>
+    <button onclick="volverLogin()">Cerrar sección</button>
+</div>
+
+</body>
+</html>
