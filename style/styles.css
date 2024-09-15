@@ -190,12 +190,15 @@ fieldset button:hover {
 /* Estilo para el mensaje de resultados */
 #resultadoMensaje {
     font-size: 18px; /* Tamaño de fuente para el mensaje */
-    color: black; /* Color de texto gris oscuro */
+    color: black; /* Color de texto negro */
     margin-bottom: 20px; /* Espacio debajo del mensaje */
     text-align: center; /* Centra el texto */
+    border: 1px solid #ddd; /* Borde del cuadro */
+    padding: 15px; /* Espacio interno del cuadro */
+    background-color: #f9f9f9; /* Color de fondo del cuadro */
+    border-radius: 8px; /* Bordes redondeados para el cuadro */
 }
 
-/* Estilo para el botón de cerrar sección */
 #resultado button {
     background-color: #007bff; /* Color de fondo azul para el botón */
     color: #ffffff; /* Color del texto blanco para el botón */
@@ -207,7 +210,16 @@ fieldset button:hover {
     transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
 }
 
-/* Estilo para el botón en estado hover */
 #resultado button:hover {
     background-color: #0056b3; /* Color de fondo azul oscuro en hover */
+}  
+.resultado-cuadro {
+    border: 2px solid #ccc;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+.resultado-cuadro h4 {
+    margin-top: 0;
 }

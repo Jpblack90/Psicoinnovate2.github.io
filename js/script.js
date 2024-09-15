@@ -27,42 +27,82 @@ function calcularPuntuacion() {
 
     // Interpretación de resultados según el género seleccionado
     if (genero === "hombre") {
-       // mensaje += `<p><strong>Atención:</strong> `;
-        if (atencion < 21) mensaje += "Estimado miembro del equipo, su puntuación en atención fue menor a 21, lo que sugiere que puede haber dificultades para mantener el enfoque en sus tareas. Le recomendamos trabajar en técnicas para mejorar su concentración y gestionar mejor sus prioridades, lo que puede optimizar su rendimiento en el trabajo.";
-        else if (atencion <= 32) mensaje += "Su puntuación en atención es de 22 a 32, lo que indica que tiene una buena capacidad para mantener el enfoque en sus tareas y proyectos. Esto es fundamental para su productividad y eficacia en el trabajo. Le animamos a seguir utilizando y perfeccionando esta habilidad para mantener su alto rendimiento y optimizar aún más su eficiencia en el entorno laboral.";
-        else mensaje += "Estimado miembro del equipo, su puntuación en atención es superior a 33, lo que sugiere que podría estar prestando demasiada atención a los detalles, lo que puede afectar su capacidad para mantener un enfoque equilibrado en sus tareas. Le recomendamos revisar sus prioridades y técnicas de gestión del tiempo para optimizar su rendimiento.";
-        mensaje += `</p>`;
+        // Cuadro para Atención
+        mensaje += `<div class="resultado-cuadro">
+                    <h4>Atención (Puntuación: ${atencion})</h4>`;
+        if (atencion < 21) {
+            mensaje += `<p>Estimado miembro del equipo, su puntuación en atención es baja, con un total de ${atencion} puntos. Esto sugiere que podría tener dificultades para mantener el enfoque en sus tareas cotidianas. Le recomendamos practicar técnicas de gestión del tiempo y concentración, como la priorización de actividades y el establecimiento de rutinas diarias para mejorar su productividad.</p>`;
+        } else if (atencion <= 32) {
+            mensaje += `<p>Su puntuación en atención es moderada, con ${atencion} puntos. Esto indica que tiene una buena capacidad para concentrarse en sus tareas, lo que le permite ser productivo. Asegúrese de seguir perfeccionando esta habilidad para mantener su alto rendimiento en el trabajo.</p>`;
+        } else {
+            mensaje += `<p>Su puntuación en atención es alta, con ${atencion} puntos. Aunque es positivo tener una buena capacidad de enfoque, tenga cuidado de no obsesionarse con los detalles menores. Puede ser útil equilibrar su atención con una visión global de las tareas para evitar el agotamiento y mejorar su eficiencia.</p>`;
+        }
+        mensaje += `</div>`;
 
-        //mensaje += `<p><strong>Claridad:</strong> `;
-        if (claridad < 25) mensaje += "Estimado integrante, su puntuación en claridad emocional es menor a 25, lo que indica que puede mejorar en esta área. Trabajar en su claridad emocional le ayudará a comunicar mejor sus emociones y a manejar mejor las relaciones laborales.";
-        else if (claridad <= 35) mensaje += "Estimado integrante, su puntuación en claridad emocional está entre 26 y 35, lo que refleja una capacidad adecuada. Siga perfeccionando esta habilidad para mantener una buena comunicación y manejo de relaciones laborales.";
-        else mensaje += "Estimado integrante, su puntuación en claridad emocional es superior a 36, lo que muestra una excelente capacidad. Su habilidad para comunicar y entender emociones es destacada y fundamental para el éxito en el entorno laboral.";
-        mensaje += `</p>`;
+        // Cuadro para Claridad
+        mensaje += `<div class="resultado-cuadro">
+                    <h4>Claridad (Puntuación: ${claridad})</h4>`;
+        if (claridad < 25) {
+            mensaje += `<p>Su puntuación en claridad emocional es baja, con un total de ${claridad} puntos. Esto indica que podría tener dificultades para identificar y entender sus emociones. Desarrollar esta habilidad puede mejorar su comunicación y relaciones interpersonales. Puede beneficiarse de la introspección y la práctica de expresar sus emociones de manera más clara.</p>`;
+        } else if (claridad <= 35) {
+            mensaje += `<p>Su puntuación en claridad emocional es moderada, con ${claridad} puntos. Esto sugiere que tiene una buena comprensión de sus emociones, lo que le permite manejar eficazmente situaciones de estrés y relacionarse bien con sus compañeros de trabajo. Mantenga este equilibrio para mejorar aún más su bienestar emocional.</p>`;
+        } else {
+            mensaje += `<p>Su puntuación en claridad emocional es alta, con ${claridad} puntos. Esto indica que posee una excelente capacidad para identificar y comunicar sus emociones, lo que contribuye a una comunicación eficaz y a una gestión emocional sólida. Esta es una habilidad valiosa en entornos laborales.</p>`;
+        }
+        mensaje += `</div>`;
 
-       // mensaje += `<p><strong>Reparación:</strong> `;
-        if (reparacion < 23) mensaje += "Estimado colega, su puntuación en reparación emocional es menor a 23, lo que sugiere que puede mejorar en la gestión y recuperación emocional. Trabajar en esta habilidad le ayudará a manejar mejor los conflictos y mantener un ambiente laboral positivo.";
-        else if (reparacion <= 35) mensaje += "Estimado profesional, su puntuación en reparación emocional está entre 24 y 35, lo que indica una capacidad adecuada. Continúe desarrollando esta habilidad para mantener un entorno laboral armonioso y gestionar conflictos efectivamente. Estamos aquí para apoyarlo.";
-        else mensaje += "Estimado profesional, su puntuación en reparación emocional es superior a 36, mostrando una excelente capacidad para gestionar y recuperarse de situaciones emocionales. Esto es fundamental para mantener un ambiente laboral positivo.";
-        mensaje += `</p>`;
+        // Cuadro para Reparación
+        mensaje += `<div class="resultado-cuadro">
+                    <h4>Reparación (Puntuación: ${reparacion})</h4>`;
+        if (reparacion < 23) {
+            mensaje += `<p>Su puntuación en reparación emocional es baja, con un total de ${reparacion} puntos. Esto sugiere que puede tener dificultades para recuperarse de emociones negativas o situaciones estresantes. Trabajar en esta habilidad le permitirá gestionar mejor sus emociones y mantener un ambiente positivo en el trabajo.</p>`;
+        } else if (reparacion <= 35) {
+            mensaje += `<p>Su puntuación en reparación emocional es moderada, con ${reparacion} puntos. Esto indica que es capaz de manejar sus emociones de manera efectiva, lo que le ayuda a recuperarse rápidamente de situaciones estresantes o desafiantes. Mantenga esta habilidad para fomentar un entorno laboral saludable.</p>`;
+        } else {
+            mensaje += `<p>Su puntuación en reparación emocional es alta, con ${reparacion} puntos. Esto sugiere que tiene una excelente capacidad para recuperarse de emociones negativas y mantener un estado emocional positivo. Esta habilidad es crucial para mantener la resiliencia en su vida laboral.</p>`;
+        }
+        mensaje += `</div>`;
+
     } else if (genero === "mujer") {
-       // mensaje += `<p><strong>Atención:</strong> `;
-        if (atencion < 24) mensaje += "Querida miembro del equipo, su puntuación en atención fue menor a 24, lo que sugiere que puede haber dificultades para mantener el enfoque en sus tareas. Le recomendamos trabajar en técnicas para mejorar su concentración y gestionar mejor sus prioridades, lo que puede optimizar su rendimiento en el trabajo.";
-        else if (atencion <= 35) mensaje += "Su puntuación en atención es de 25 a 35, lo que indica que tiene una buena capacidad para mantener el enfoque en sus tareas y proyectos. Esto es fundamental para su productividad y eficacia en el trabajo. Le animamos a seguir utilizando y perfeccionando esta habilidad para mantener su alto rendimiento y optimizar aún más su eficiencia en el entorno laboral.";
-        else mensaje += "Querida miembro del equipo, su puntuación en atención es superior a 36, lo que sugiere que podría estar prestando demasiada atención a los detalles, lo que puede afectar su capacidad para mantener un enfoque equilibrado en sus tareas. Le recomendamos revisar sus prioridades y técnicas de gestión del tiempo para optimizar su rendimiento.";
-        mensaje += `</p>`;
+        // Cuadro para Atención
+        mensaje += `<div class="resultado-cuadro">
+                    <h4>Atención (Puntuación: ${atencion})</h4>`;
+        if (atencion < 24) {
+            mensaje += `<p>Querida miembro del equipo, su puntuación en atención es baja, con un total de ${atencion} puntos. Esto puede indicar dificultades para concentrarse en las tareas asignadas. Le recomendamos aplicar técnicas como la creación de listas de tareas o la segmentación del tiempo en intervalos más manejables para mejorar su enfoque.</p>`;
+        } else if (atencion <= 35) {
+            mensaje += `<p>Su puntuación en atención es moderada, con ${atencion} puntos. Tiene una buena capacidad para concentrarse en las tareas importantes, lo que es esencial para mantener la productividad. Siga desarrollando esta habilidad para mejorar aún más su desempeño.</p>`;
+        } else {
+            mensaje += `<p>Su puntuación en atención es alta, con ${atencion} puntos. Aunque una alta capacidad de atención es beneficiosa, asegúrese de no perder la perspectiva general por enfocarse demasiado en los detalles. Le recomendamos practicar una visión más amplia para balancear su rendimiento.</p>`;
+        }
+        mensaje += `</div>`;
 
-        //mensaje += `<p><strong>Claridad:</strong> `;
-        if (claridad < 23) mensaje += "Querida integrante, su puntuación en claridad emocional es menor a 23, lo que sugiere que puede mejorar en esta área. Trabajar en su claridad emocional le ayudará a comunicar mejor sus emociones y manejar las relaciones laborales. Estamos aquí para apoyarla.";
-        else if (claridad <= 34) mensaje += "Querida integrante, su puntuación en claridad emocional está entre 24 y 34, indicando una capacidad adecuada. Siga desarrollando esta habilidad para mantener una buena comunicación y manejo de relaciones laborales.";
-        else mensaje += "Querida integrante, su puntuación en claridad emocional es superior a 35, mostrando una excelente capacidad. Su habilidad para comunicar y entender emociones es destacada y beneficiosa para el entorno laboral.";
-        mensaje += `</p>`;
+        // Cuadro para Claridad
+        mensaje += `<div class="resultado-cuadro">
+                    <h4>Claridad (Puntuación: ${claridad})</h4>`;
+        if (claridad < 23) {
+            mensaje += `<p>Su puntuación en claridad emocional es baja, con ${claridad} puntos. Esto puede dificultar la expresión de sus emociones. Trabajar en su claridad emocional le permitirá relacionarse mejor con los demás y expresar sus sentimientos de manera más clara y efectiva.</p>`;
+        } else if (claridad <= 34) {
+            mensaje += `<p>Su puntuación en claridad emocional es moderada, con ${claridad} puntos. Esto indica una buena capacidad para comprender y comunicar sus emociones, lo que es esencial para manejar el estrés y las relaciones interpersonales en el trabajo.</p>`;
+        } else {
+            mensaje += `<p>Su puntuación en claridad emocional es alta, con ${claridad} puntos. Esto refleja una gran habilidad para identificar y expresar sus emociones, lo que facilita una comunicación efectiva y el bienestar emocional en el entorno laboral.</p>`;
+        }
+        mensaje += `</div>`;
 
-       // mensaje += `<p><strong>Reparación:</strong> `;
-        if (reparacion < 23) mensaje += "Querida colaboradora, su puntuación en reparación emocional es menor a 23, lo que indica que puede mejorar en la gestión y recuperación emocional. Fortalecer esta habilidad le ayudará a manejar mejor los conflictos en el entorno laboral. Estamos aquí para apoyarla.";
-        else if (reparacion <= 34) mensaje += "Querida colaboradora, su puntuación en reparación emocional está entre 24 y 34, lo que refleja una capacidad adecuada. Seguir perfeccionando esta habilidad contribuirá a un ambiente laboral armonioso y a una gestión efectiva de conflictos.";
-        else mensaje += "Querida colaboradora, su puntuación en reparación emocional es superior a 35, indicando una excelente capacidad para manejar y recuperarse de situaciones emocionales. Esto es clave para mantener un entorno organizacional positivo.";
-        mensaje += `</p>`;
+        // Cuadro para Reparación
+        mensaje += `<div class="resultado-cuadro">
+                    <h4>Reparación (Puntuación: ${reparacion})</h4>`;
+        if (reparacion < 23) {
+            mensaje += `<p>Su puntuación en reparación emocional es baja, con un total de ${reparacion} puntos. Esto indica que podría beneficiarse al desarrollar su capacidad para recuperarse emocionalmente de situaciones difíciles. Practicar técnicas de manejo del estrés y autocuidado puede ser de gran ayuda.</p>`;
+        } else if (reparacion <= 34) {
+            mensaje += `<p>Su puntuación en reparación emocional es moderada, con ${reparacion} puntos. Esto demuestra que tiene una capacidad sólida para manejar y recuperarse de situaciones emocionales desafiantes. Esta habilidad es fundamental para mantener el equilibrio emocional en su vida laboral.</p>`;
+        } else {
+            mensaje += `<p>Su puntuación en reparación emocional es alta, con ${reparacion} puntos. Esto indica una excelente capacidad para gestionar y recuperarse de emociones negativas. Esta habilidad le permite mantener una actitud positiva y resiliente frente a los desafíos.</p>`;
+        }
+        mensaje += `</div>`;
     }
+
+
+
     // Ocultamos todos los bloques y la selección de género, y mostramos el resultado
     document.getElementById('bloque1').style.display = 'none';
     document.getElementById('bloque2').style.display = 'none';
@@ -76,4 +116,7 @@ function calcularPuntuacion() {
 
 function volverLogin() {
     window.location.href = 'index.html'; // Cambia esto si la ubicación de tu página de login es diferente
+}
+function ocultarResultado() {
+    document.getElementById('resultado').style.display = 'none';
 }
