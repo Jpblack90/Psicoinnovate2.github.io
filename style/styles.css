@@ -54,7 +54,7 @@ body {
     color: black; /* Color de texto gris oscuro para un buen contraste */
     margin: 20px 0; /* Espacio arriba y abajo del párrafo */
     padding: 10px; /* Espacio interno para dar algo de acolchamiento */
-    border: 1px solid #dddddd; /* Borde sutil alrededor del párrafo */
+    border: 4px solid #313131; /* Borde sutil alrededor del párrafo */
     border-radius: 8px; /* Bordes redondeados para un aspecto más suave */
     background-color: #f9f9f9; /* Fondo ligeramente gris para destacar el texto */
     max-width: 800px; /* Ancho máximo del párrafo para evitar líneas demasiado largas */
@@ -67,7 +67,7 @@ body {
     font-family: Arial, sans-serif; /* Fuente limpia y moderna */
     background-color: #f9f9f9; /* Fondo ligeramente gris para destacar la sección */
     padding: 20px; /* Espacio interno para que el contenido no esté pegado a los bordes */
-    border: 4px solid #504e4e; /* Borde sutil para separar la sección del resto del contenido */
+    border: 4px solid #313131; /* Borde sutil para separar la sección del resto del contenido */
     border-radius: 8px; /* Bordes redondeados para un aspecto más suave */
     max-width: 400px; /* Ancho máximo para mantener la sección contenida */
     margin: 20px auto; /* Centra el contenedor horizontalmente con margen superior e inferior */
@@ -146,7 +146,7 @@ fieldset select {
     padding: 10px; /* Espacio interno */
     font-size: 16px; /* Tamaño de fuente */
     border-radius: 4px; /* Bordes redondeados */
-    border: 1px solid #cccccc; /* Borde ligero */
+    border: 1px solid #313131; /* Borde ligero */
     background-color: #ffffff; /* Fondo blanco */
     margin-top: 5px; /* Espacio encima del select */
 }
@@ -182,7 +182,7 @@ fieldset button:hover {
     margin: 20px auto; /* Centra el contenedor horizontalmente con margen superior e inferior */
     padding: 20px; /* Espacio interno para separar el contenido del borde */
     background-color: #ffffff; /* Fondo blanco para el contenedor */
-    border: 1px solid #dddddd; /* Borde sutil */
+    border: 4px solid #313131; /* Borde sutil */
     border-radius: 8px; /* Bordes redondeados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para un efecto de profundidad */
 }
