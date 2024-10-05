@@ -67,7 +67,7 @@ body {
     font-family: Arial, sans-serif; /* Fuente limpia y moderna */
     background-color: #f9f9f9; /* Fondo ligeramente gris para destacar la sección */
     padding: 20px; /* Espacio interno para que el contenido no esté pegado a los bordes */
-    border: 1px solid #dddddd; /* Borde sutil para separar la sección del resto del contenido */
+    border: 4px solid #504e4e; /* Borde sutil para separar la sección del resto del contenido */
     border-radius: 8px; /* Bordes redondeados para un aspecto más suave */
     max-width: 400px; /* Ancho máximo para mantener la sección contenida */
     margin: 20px auto; /* Centra el contenedor horizontalmente con margen superior e inferior */
@@ -106,7 +106,7 @@ form {
 
 /* Estilo general para el fieldset */
 fieldset {
-    border: 1px solid #cccccc; /* Borde ligero para el fieldset */
+    border: 4px solid #000000; /* Borde ligero para el fieldset */
     border-radius: 8px; /* Bordes redondeados */
     padding: 20px; /* Espacio interno */
     margin: 20px auto; /* Margen superior e inferior, centrado horizontalmente */
